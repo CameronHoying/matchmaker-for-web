@@ -35,7 +35,11 @@ let Question3Compatability = 5 - Math.abs(Question3Answer - RESPONSE[0])
 let Question4Compatability = 5 - Math.abs(Question4Answer - RESPONSE[0])
 let Question5Compatability = 5 - Math.abs(Question5Answer - RESPONSE[4])
 
-
+console.log("c1="+Question1Compatability);
+console.log("c2="+Question1Compatability);
+console.log("c3="+Question1Compatability);
+console.log("c4="+Question1Compatability);
+console.log("c5="+Question1Compatability);
 
 let TotalScore = Question1Compatability + Question2Compatability + Question3Compatability + Question4Compatability + Question5Compatability;
 
