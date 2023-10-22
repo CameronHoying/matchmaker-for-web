@@ -48,8 +48,17 @@ TotalScore = Math.round(TotalScore);
 console.log("tc=" + TotalScore);
 
 document.getElementById("Compatability").innerHTML = "Our compatability is a " + TotalScore;
+console.log("TotalScore=" + TotalScore)
 
-
+if (TotalScore > 90) {
+    console.log("Lets get married")
+}
+ifelse (TotalScore > 60){
+    console.log("I think we will be good friends.")
+}
+else (){
+    console.log("We will never be friends.")
+}
 
 
 
