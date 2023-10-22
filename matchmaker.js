@@ -30,9 +30,9 @@ function CalculateCompatability () {
     console.log(document.getElementById("question6").selectedOptions[0].value);
     console.log(Question5Answer); 
     let Question1Compatability = 5 - Math.abs(Question1Answer - RESPONSE[0]) 
-    let Question2Compatability = 5 - Math.abs(Question2Answer - RESPONSE[0]) 
-    let Question3Compatability = 5 - Math.abs(Question3Answer - RESPONSE[0]) 
-    let Question4Compatability = 5 - Math.abs(Question4Answer - RESPONSE[0]) 
+    let Question2Compatability = 5 - Math.abs(Question2Answer - RESPONSE[1]) 
+    let Question3Compatability = 5 - Math.abs(Question3Answer - RESPONSE[2]) 
+    let Question4Compatability = 5 - Math.abs(Question4Answer - RESPONSE[3]) 
     let Question5Compatability = 5 - Math.abs(Question5Answer - RESPONSE[4])
  
     console.log("c1="+Question1Compatability); 
@@ -54,7 +54,7 @@ function CalculateCompatability () {
     console.log("Lets get married") }  
     if (TotalScore > 60){
     console.log("I think we will be good friends.") } 
-    else (){
+    else () {
     console.log("We will never be friends.")}
 
 
