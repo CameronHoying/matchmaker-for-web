@@ -1,4 +1,4 @@
-function CalculateCompatability () {
+function CalculateCompatIbility () {
 
     const RESPONSE = [
         5, /* Strongly Agree */
@@ -69,4 +69,5 @@ function CalculateCompatability () {
     document.getElementById("Friends").innerHTML = "Friends! " + JustFriends;
 }   else if (TotalScore < 70) {
     document.getElementById("Friends").innerHTML = "NotFriends! " + Notfriends;
+}
 }
