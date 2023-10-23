@@ -1,4 +1,4 @@
-function CalculateCompatibility () {
+function calculateCompatibility () {
 
     const RESPONSE = [
         5, /* Strongly Agree */
