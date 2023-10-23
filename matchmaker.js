@@ -1,10 +1,7 @@
-function CalculateCompatIbility () {
+function CalculateCompatibility () {
 
     const RESPONSE = [
         5, /* Strongly Agree */
-        4, /* Agree */
-        3, /* Neutral */
-        2, /* Disagree */
         1, /* Strongly Disagree */
     ]
     const MAX_SCORE = 25;
@@ -39,25 +36,25 @@ function CalculateCompatIbility () {
     console.log(document.getElementById("question6").selectedOptions[0].value);
     console.log(Question5Answer); 
 
-    let Question1Compatability = 5 - Math.abs(Question1Answer - RESPONSE[0]) 
-    let Question2Compatability = 5 - Math.abs(Question2Answer - RESPONSE[1]) 
-    let Question3Compatability = 5 - Math.abs(Question3Answer - RESPONSE[2]) 
-    let Question4Compatability = 5 - Math.abs(Question4Answer - RESPONSE[3]) 
-    let Question5Compatability = 5 - Math.abs(Question5Answer - RESPONSE[4])
+    let Question1Compatibility = 5 - Math.abs(Question1Answer - RESPONSE[0]) 
+    let Question2Compatibility = 5 - Math.abs(Question2Answer - RESPONSE[0]) 
+    let Question3Compatibility = 5 - Math.abs(Question3Answer - RESPONSE[0]) 
+    let Question4Compatibility = 5 - Math.abs(Question4Answer - RESPONSE[0]) 
+    let Question5Compatibility = 5 - Math.abs(Question5Answer - RESPONSE[1])
  
-    console.log("Compatibility1="+Question1Compatability); 
-    console.log("Compatibility2="+Question1Compatability); 
-    console.log("Compatibility3="+Question1Compatability); 
-    console.log("Compatibility4="+Question1Compatability); 
-    console.log("Compatibility5="+Question1Compatability);
+    console.log("Compatibility1="+Question1Compatibility); 
+    console.log("Compatibility2="+Question1Compatibility); 
+    console.log("Compatibility3="+Question1Compatibility); 
+    console.log("Compatibility4="+Question1Compatibility); 
+    console.log("Compatibility5="+Question1Compatibility);
  
-    let TotalScore = Question1Compatability + Question2Compatability + Question3Compatability + Question4Compatability + Question5Compatability;
+    let TotalScore = Question1Compatibility + Question2Compatibility + Question3Compatibility + Question4Compatibility + Question5Compatibility;
  
     TotalScore *= 100 / MAX_SCORE; 
     TotalScore = Math.round(TotalScore); 
     console.log("TotalScore=" + TotalScore);
  
-    document.getElementById("compatability").innerHTML = "Our compatability is a " + TotalScore; 
+    document.getElementById("compatibility").innerHTML = "Our compatibility is a " + TotalScore; 
 
     let LoverFriends = "You and Cameron should get married right away!";
     let JustFriends = "You and Cameron will make perfect friends.";
